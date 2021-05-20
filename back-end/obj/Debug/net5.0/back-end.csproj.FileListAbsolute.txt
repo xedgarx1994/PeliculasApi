@@ -134,7 +134,6 @@ C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\bin\Debug\net5.0\
 C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\obj\Debug\net5.0\back-end.csprojAssemblyReference.cache
 C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\obj\Debug\net5.0\back-end.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\obj\Debug\net5.0\back-end.AssemblyInfoInputs.cache
 C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\obj\Debug\net5.0\back-end.AssemblyInfo.cs
