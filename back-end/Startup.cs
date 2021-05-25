@@ -36,13 +36,14 @@ namespace back_end
             services.AddAutoMapper(typeof(Startup));
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
+            
             services.AddCors(options =>
             {
                 var frontendURL = Configuration.GetValue<string>("frontend_url");
                 options.AddDefaultPolicy(builder =>
                 {
                     builder.WithOrigins(frontendURL).AllowAnyMethod().AllowAnyHeader()
-                    .WithExposedHeaders(new string[] { "cantidadTotalRegistro" });
+                    .WithExposedHeaders(new string[] { "cantidadTotalRegistros" });
                 });
             });
            

@@ -65,19 +65,16 @@ namespace back_end.Controllers
         //}
 
         [HttpGet("{Id:int}")]
-        public async Task<ActionResult<Genero>> Get(int Id)
+        public async Task<ActionResult<GeneroDTO>> Get(int Id)
         {
-            throw new NotImplementedException();
-            //logger.LogDebug($"Obteniendo un género por el Id: {Id}");
-            //var genero = await repositorio.ObtenerPorId(Id);
-            //if(genero == null)
-            //{
-            //    //throw new ApplicationException($"El genero de ID {Id} no fue encontrado");
-            //    logger.LogWarning($"No se pudo encontrar el género de id: {Id}");
-            //    return NotFound();
-            //}
-            //// return ok("Felipe") permite retornar lo que sea, pero el problema es que no sabemos que va enviar
-            //return genero;
+            var genero = await context.Generos.FirstOrDefaultAsync(x => x.Id == Id);
+
+            if(genero == null)
+            {
+                return NotFound();
+            }
+
+            return mapper.Map<GeneroDTO>(genero);
         }
 
         [HttpPost]
@@ -91,17 +88,36 @@ namespace back_end.Controllers
             return NoContent();
         }
 
-        [HttpPut]
-        public ActionResult Put()
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult> Put(int Id, [FromBody] GeneroCreacionDTO generoCreacionDTO)
         {
             //return NoContent();
-            throw new NotImplementedException();
+            //    throw new NotImplementedException();
+            var genero = await context.Generos.FirstOrDefaultAsync(x => x.Id == Id);
+
+            if (genero == null)
+            {
+                return NotFound();
+            }
+            genero = mapper.Map(generoCreacionDTO, genero);
+
+            await context.SaveChangesAsync();
+            return NoContent();
         }
-        [HttpDelete]
-        public ActionResult Delete()
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult> Delete(int id)
         {
             //return NoContent();
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            var existe = await context.Generos.AnyAsync(x => x.Id == id);
+
+            if(!existe)
+            {
+                return NotFound();
+            }
+            context.Remove(new Genero() { Id = id });
+            await context.SaveChangesAsync();
+            return NoContent();
         }
     }
 }
