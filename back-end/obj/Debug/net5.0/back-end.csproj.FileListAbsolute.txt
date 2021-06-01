@@ -151,4 +151,8 @@ C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\obj\Debug\net5.0\
 C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\obj\Debug\net5.0\back-end.genruntimeconfig.cache
 C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\obj\Debug\net5.0\back-end.csprojAssemblyReference.cache
+C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\bin\Debug\net5.0\Azure.Core.dll
+C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\bin\Debug\net5.0\Azure.Storage.Blobs.dll
+C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\bin\Debug\net5.0\Azure.Storage.Common.dll
+C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\bin\Debug\net5.0\System.Memory.Data.dll
