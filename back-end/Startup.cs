@@ -34,7 +34,11 @@ namespace back_end
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAutoMapper(typeof(Startup));
-            services.AddTransient<IAlmacenadorArchivos, AlmacenadorAzureStorage>();
+            services.AddTransient<IAlmacenadorArchivos, AlmacenadorAzureStorage>(); //Servicio que llama a Azure Storage 
+            //services.AddTransient<IAlmacenadorArchivos, AlmacenadorArchivosLocal>(); //Servicios que usa almacenamiento local
+
+            //services.AddHttpContextAccessor(); //Solo para almacenar archivos locales
+
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
             
@@ -72,6 +76,8 @@ namespace back_end
             }
 
             app.UseHttpsRedirection();
+
+            app.UseStaticFiles();
 
             app.UseRouting();
 
