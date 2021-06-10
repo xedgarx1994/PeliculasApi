@@ -1,4 +1,4 @@
-﻿using back_end.Validaciones;
+﻿using NetTopologySuite.Geometries;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -7,15 +7,14 @@ using System.Threading.Tasks;
 
 namespace back_end.Entidades
 {
-    public class Genero
+    public class Cine
     {
         public int Id { get; set; }
-        
         [Required]
-        [StringLength(maximumLength:50)]
-        [PrimeraLetraMayuscula]
+        [StringLength(maximumLength: 75)]
         public string Nombre { get; set; }
-        public List<PeliculasGeneros> PeliculasGeneros { get; set; }
-        
+        public Point ubicacion { get; set; }
+
+        public List<PeliculasCines> PeliculasCines { get; set; }
     }
 }

@@ -157,3 +157,7 @@ C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\bin\Debug\net5.0\
 C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\bin\Debug\net5.0\System.Memory.Data.dll
 C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\obj\Debug\net5.0\back-end.csprojAssemblyReference.cache
+C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
+C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\bin\Debug\net5.0\NetTopologySuite.dll
+C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\bin\Debug\net5.0\NetTopologySuite.IO.SqlServerBytes.dll
+C:\Users\Edgar Ramos\source\repos\prueba\PeliculasApi\back-end\obj\Debug\net5.0\EFCoreSqlServerNetTopologySuite.cs
