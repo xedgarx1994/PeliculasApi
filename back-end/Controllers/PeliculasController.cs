@@ -53,7 +53,7 @@ namespace back_end.Controllers
             return resultado;
         }
 
-        [HttpGet("PutGet")]
+        [HttpGet("PutGet/{id:int}")]
         public async Task<ActionResult<PeliculasPutGetDTO>> PutGet(int id)
         {
             var peliculaActionResult = await Get(id);
@@ -83,7 +83,7 @@ namespace back_end.Controllers
             return respuesta;
         }
         [HttpPut("{id:int}")]
-        public async Task<ActionResult> Put(int id, [FromForm] PeliculaCreacionDTO peliculaCreacionDTO)
+        public async Task<ActionResult<int>> Put(int id, [FromForm] PeliculaCreacionDTO peliculaCreacionDTO)
         {
             var pelicula = await context.Peliculas
                 .Include(x => x.PeliculasActores)
@@ -101,7 +101,7 @@ namespace back_end.Controllers
                 pelicula.Poster = await almacenadorArchivos.EditarArchivo(contenedor, peliculaCreacionDTO.Poster, pelicula.Poster);
             EscribirOrdenActores(pelicula);
             await context.SaveChangesAsync();
-            return NoContent();
+            return pelicula.Id;
         }
         [HttpGet("{id:int}")]
         public async Task<ActionResult<PeliculaDTO>> Get(int id)
