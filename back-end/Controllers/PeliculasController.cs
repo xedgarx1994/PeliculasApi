@@ -122,6 +122,27 @@ namespace back_end.Controllers
             return dto;
         }
 
+        [HttpGet("filtrar")]
+        public async Task<ActionResult<List<PeliculaDTO>>> Filtrar([FromQuery] PeliculasFiltroDTO peliculasFiltroDTO)
+        {
+            var peliculasQueryable = context.Peliculas.AsQueryable();
+            if (!string.IsNullOrEmpty(peliculasFiltroDTO.Titulo)){
+                peliculasQueryable = peliculasQueryable.Where(x => x.Titulo.Contains(peliculasFiltroDTO.Titulo));
+            }
+            if (peliculasFiltroDTO.EnCines)
+                peliculasQueryable = peliculasQueryable.Where(x => x.EnCines);
+            if (peliculasFiltroDTO.ProximosEstrenos)
+                peliculasQueryable = peliculasQueryable.Where(x => x.FechaLanzamiento > DateTime.Today);
+            if (peliculasFiltroDTO.GeneroId != 0)
+                peliculasQueryable = peliculasQueryable
+                    .Where(x => x.PeliculasGeneros.Select(y => y.GeneroId)
+                    .Contains(peliculasFiltroDTO.GeneroId));
+            await HttpContext.InsertarParametrosPaginacionEnCabecera(peliculasQueryable);
+
+            var peliculas = await peliculasQueryable.Paginar(peliculasFiltroDTO.PaginacionDTO).ToListAsync();
+            return mapper.Map<List<PeliculaDTO>>(peliculas);
+        }
+
         [HttpPost]
         public async Task<ActionResult> Post([FromForm] PeliculaCreacionDTO peliculaCreacionDTO)
         {
@@ -158,6 +179,20 @@ namespace back_end.Controllers
 
                 }
             }
+        }
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            var pelicula = await context.Peliculas.FirstOrDefaultAsync(x => x.Id == id);
+            if (pelicula == null)
+            {
+                return NotFound();
+            }
+            context.Remove(pelicula);
+            await context.SaveChangesAsync();
+
+            await almacenadorArchivos.BorrarArchivo(pelicula.Poster, contenedor);
+            return NoContent();
         }
     }
 }
