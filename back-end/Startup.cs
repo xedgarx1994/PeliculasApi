@@ -46,8 +46,8 @@ namespace back_end
                 }).CreateMapper());
 
             services.AddSingleton<GeometryFactory>(NtsGeometryServices.Instance.CreateGeometryFactory(srid: 4326)); //4326 APLICA EN LA TIERRA
-            services.AddTransient<IAlmacenadorArchivos, AlmacenadorAzureStorage>(); //Servicio que llama a Azure Storage 
-            //services.AddTransient<IAlmacenadorArchivos, AlmacenadorArchivosLocal>(); //Servicios que usa almacenamiento local
+            //services.AddTransient<IAlmacenadorArchivos, AlmacenadorAzureStorage>(); //Servicio que llama a Azure Storage 
+            services.AddTransient<IAlmacenadorArchivos, AlmacenadorArchivosLocal>(); //Servicios que usa almacenamiento local
 
             services.AddHttpContextAccessor(); //Solo para almacenar archivos locales
 
