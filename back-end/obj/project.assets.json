@@ -6277,11 +6277,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Edgar Ramos\\source\\repos\\prueba\\PeliculasApi\\back-end\\back-end.csproj",
+      "projectUniqueName": "C:\\Users\\Edgar Ramos\\Documents\\GitHub\\PeliculasApi\\back-end\\back-end.csproj",
       "projectName": "back-end",
-      "projectPath": "C:\\Users\\Edgar Ramos\\source\\repos\\prueba\\PeliculasApi\\back-end\\back-end.csproj",
+      "projectPath": "C:\\Users\\Edgar Ramos\\Documents\\GitHub\\PeliculasApi\\back-end\\back-end.csproj",
       "packagesPath": "C:\\Users\\Edgar Ramos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Edgar Ramos\\source\\repos\\prueba\\PeliculasApi\\back-end\\obj\\",
+      "outputPath": "C:\\Users\\Edgar Ramos\\Documents\\GitHub\\PeliculasApi\\back-end\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

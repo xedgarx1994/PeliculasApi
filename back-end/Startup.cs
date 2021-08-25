@@ -89,6 +89,11 @@ namespace back_end
                     ClockSkew = TimeSpan.Zero
                 });
             //services.AddResponseCaching();
+
+            services.AddAuthorization(opciones =>
+            {
+                opciones.AddPolicy("EsAdmin", policy => policy.RequireClaim("role", "admin"));
+            });
             services.AddControllers(option =>
             {
                 option.Filters.Add(typeof(FiltroDeExcepcion));

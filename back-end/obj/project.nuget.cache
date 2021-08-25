@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eHAXXA22kympIpCMn0qXpkOVY24V30olIzxqh6f/eNOIzQyJkqlSyz3usTRL/tXQIUuFzrhyMp2UCg6VMU2bIA==",
+  "dgSpecHash": "dJFaNJYsC3jHy+4whZ+2SbqGVnI0Pi26hqk1NjdtVZ9ZRvERcJ8i70cTdP6FnQWhMDwJMeJYzBofDz1lHu5XSw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Edgar Ramos\\source\\repos\\prueba\\PeliculasApi\\back-end\\back-end.csproj",
+  "projectFilePath": "C:\\Users\\Edgar Ramos\\Documents\\GitHub\\PeliculasApi\\back-end\\back-end.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Edgar Ramos\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Edgar Ramos\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
