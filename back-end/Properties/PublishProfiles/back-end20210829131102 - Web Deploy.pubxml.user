@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAfX0hFYAJhk6XNtJ+5GG9NAAAAAACAAAAAAAQZgAAAAEAACAAAAADmUjN6U8/Z+sqncpODDLKYjUOYDpiOJB4yQLDDohf+gAAAAAOgAAAAAIAACAAAACoMcZoV5zp5OVneEGDghnyurkggn40Mx3RcnLAu0nms4AAAABrrjkFruVNMUU5IvF3xYqeyMPH/8es/59tiVlgIb6rdb4tRUO0KK5+8r8m4KNC/XdklFP6kOhXKyW8FwLnzftROauDd/6dGt0KrPQ087l1qczq/ry5SmYv7heBemzqIo8QmWhmQI2VfWKRwOgPHxYEty6hoj/cpHDJh0ZJxdwg80AAAAB4xGWteUIaOOYzSvaGt1HCnApGofyOMeITVw5yJrY7OgnJ1W3/kICa9R6tooHpQlqQJOjtyNfGwdAu3CRagr+S</EncryptedPassword>
+    <History>False|2021-08-29T18:27:03.3243384Z;False|2021-08-29T13:21:52.6124144-05:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="back_end.ApplicationDbContext">
+      <Value>DefaultEndpointsProtocol=https%3bAccountName=xpeliculasapix%3bAccountKey=2n6mOUpt9Xux9OjR0QXOLLZpXzn3Ypdj/ztQ+2p4LZHv1zZVohGnK04aIDqX/ssv5ilaiHFYU3c20bNDqNQ0Pw==%3bEndpointSuffix=core.windows.net</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

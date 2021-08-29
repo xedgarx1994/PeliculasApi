@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "storage1": {
+      "restored": true,
+      "restoreTime": "2021-08-29T18:18:56.4936387Z"
+    },
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2021-08-29T18:18:41.605605Z"
+    }
+  },
+  "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "781dabdd-d021-4042-8670-c9d5ff9cc0b2"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "PeliculasApi"
+    }
+  }
+}

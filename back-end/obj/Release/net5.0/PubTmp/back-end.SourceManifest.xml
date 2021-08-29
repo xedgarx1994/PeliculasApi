@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\Edgar Ramos\Documents\GitHub\PeliculasApi\back-end\obj\Release\net5.0\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\Edgar Ramos\Documents\GitHub\PeliculasApi\back-end\obj\Release\net5.0\PubTmp\EFSQLScripts\back_end.ApplicationDbContext.sql" />
+</sitemanifest>
